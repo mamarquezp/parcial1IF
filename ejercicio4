@@ -4,8 +4,8 @@ const residuo4 = year % 4
 if (residuo4==0) {
 	const residuo100 = year % 100
 	if (residuo100==0) {
-		if (residuo400==0) {
-		const residuo400 = year % 400
+        const residuo400 = year % 400
+		if (residuo400==0) {		
 			alert(`El año ${year} es bisiesto`)
 		} else {
 			alert(`El año ${year} no es bisiesto`)

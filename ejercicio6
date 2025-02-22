@@ -1,0 +1,25 @@
+//Ejercicio 6 Parcial1
+let ladoA = Number( prompt(`Ingrese longitud del lado A:`))
+let ladoB = Number( prompt(`Ingrese longitud del lado B:`))
+let ladoC = Number( prompt(`Ingrese longitud del lado C:`))
+let ladosIguales = 0
+if (ladoA == ladoB) {
+    ladosIguales++    
+} 
+if (ladoA == ladoC) {
+    ladosIguales++
+} 
+if (ladoB == ladoC) {
+    ladosIguales++
+}
+switch (ladosIguales) {
+    case 0:
+        alert(`El triángulo: ${ladoA},${ladoB},${ladoC} es un triángulo escaleno`)
+        break
+    case 1:
+        alert(`El triángulo: ${ladoA},${ladoB},${ladoC} es un triángulo isósceles`)
+        break
+    case 3:
+        alert(`El triángulo: ${ladoA},${ladoB},${ladoC} es un triángulo equilátero`)
+        break
+}

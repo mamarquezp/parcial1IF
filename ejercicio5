@@ -1,0 +1,13 @@
+//Ejercicio 5 Parcial1
+let calificacion = Number( prompt(`Ingrese la calificación:`))
+let categoriaPuntuacion = null
+if (calificacion>=90) {
+    categoriaPuntuacion = "Sobresaliente"
+} else if (calificacion>=80) {
+    categoriaPuntuacion = "Notable"    
+} else if (calificacion>=60) {
+    categoriaPuntuacion = "Aprobado"
+} else {
+    categoriaPuntuacion = "Suspenso"
+}
+alert(`Su calificación ${calificacion} corresponde a la categoría ${categoriaPuntuacion}`)

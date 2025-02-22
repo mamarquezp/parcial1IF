@@ -1,7 +1,6 @@
 // Ejercicio 4 Parcial1
 let year = Number( prompt(`Ingrese un año:`))
 const residuo4 = year % 4
-alert (`${residuo4} y ${residuo100} y ${residuo400}`)
 if (residuo4==0) {
 	const residuo100 = year % 100
 	if (residuo100==0) {
